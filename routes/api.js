@@ -12,4 +12,8 @@ router.get('/', function(req, res) {
 
 router.get('/examples', ExamplesController.getExamples);
 
+router.get('/examples/:exampleId', ExamplesController.getExample);
+
+router.post('/examples', ExamplesController.postExamples);
+
 module.exports = router;
